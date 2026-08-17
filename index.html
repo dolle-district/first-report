@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4b2635">
+<meta name="description" content="Initial creative observation and pre-launch visual research for Dolle District by Ayanna Renee.">
+<title>Dolle District by Ayanna Renee — Initial Creative Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#4b2635;
+  --wine-deep:#301824;
+  --rose:#b77a8d;
+  --rose-soft:#ead4da;
+  --cream:#fbf7f2;
+  --ivory:#fffdf9;
+  --gold:#b58a55;
+  --ink:#30262a;
+  --muted:#776b70;
+  --line:#e9dfe0;
+  --shadow:0 18px 50px rgba(48,24,36,.10);
+  --radius:24px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.7}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(251,247,242,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(233,223,224,.85)}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand-mini{font-family:"Cormorant Garamond",serif;font-size:1.25rem;color:var(--wine);font-weight:600;letter-spacing:.02em}
+.navlinks{display:flex;gap:18px;align-items:center}
+.navlinks a{text-decoration:none;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.navlinks a:hover{color:var(--wine)}
+.menu{display:none;border:0;background:none;color:var(--wine);font-size:1.5rem}
+.hero{padding:44px 0 72px;background:
+ radial-gradient(circle at 15% 20%, rgba(183,122,141,.13), transparent 30%),
+ linear-gradient(135deg,#fffdf9 0%,#f8ecef 48%,#fbf7f2 100%)}
+.hero-grid{display:grid;grid-template-columns:1fr .82fr;gap:46px;align-items:center}
+.hero-copy{padding:15px 0}
+.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.22em;color:var(--gold);font-weight:700}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",serif;color:var(--wine);line-height:1.08;margin:0 0 16px}
+h1{font-size:clamp(3.3rem,7vw,6.5rem);font-weight:500;letter-spacing:-.03em}
+.script{font-family:"Parisienne",cursive;color:var(--rose);font-size:clamp(2rem,4vw,3rem)}
+.hero-sub{font-family:"Cormorant Garamond",serif;font-size:1.35rem;color:var(--wine);margin:14px 0}
+.hero-note{max-width:650px;color:var(--muted);font-size:.98rem}
+.logo-card{background:#24151d;border-radius:28px;padding:12px;box-shadow:var(--shadow);transform:rotate(1deg)}
+.logo-card img{border-radius:20px;width:100%;height:auto}
+.byline{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted)}
+section{padding:84px 0}
+.section-head{max-width:760px;margin-bottom:38px}
+.section-kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(2.5rem,5vw,4rem);font-weight:500}
+.lead{font-family:"Cormorant Garamond",serif;font-size:1.35rem;color:#5d4b52}
+.paper{background:var(--ivory);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,4vw,48px);box-shadow:0 12px 40px rgba(48,24,36,.05)}
+.welcome{background:linear-gradient(145deg,#fffdf9,#f7e9ed)}
+.pullquote{font-family:"Cormorant Garamond",serif;font-size:clamp(1.65rem,3vw,2.35rem);color:var(--wine);text-align:center;max-width:800px;margin:35px auto}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.brand-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 10px 30px rgba(48,24,36,.045)}
+.brand-no{font-family:"Cormorant Garamond",serif;font-size:1.15rem;color:var(--gold)}
+.brand-card h3{font-size:2rem;margin:4px 0 10px}
+.brand-links{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:999px;padding:9px 14px;text-decoration:none;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;border:1px solid var(--line);background:var(--ivory);color:var(--wine);cursor:pointer}
+.btn:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(48,24,36,.09)}
+.btn.primary{background:var(--wine);color:#fff;border-color:var(--wine)}
+.btn.ghost{background:transparent}
+.brand-card p{font-size:.9rem;color:var(--muted);margin:0}
+.read-more{margin-top:15px}
+.accordion{display:grid;gap:12px}
+.accordion-item{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
+.accordion-btn{width:100%;text-align:left;background:none;border:0;padding:20px 22px;font-family:"Cormorant Garamond",serif;font-size:1.45rem;color:var(--wine);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.accordion-content{display:none;padding:0 22px 22px;color:var(--muted);font-size:.92rem}
+.accordion-item.open .accordion-content{display:block}
+.accordion-item.open .plus{transform:rotate(45deg)}
+.plus{font-family:Arial,sans-serif;font-size:1.3rem;transition:.2s}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.pill{background:var(--rose-soft);color:var(--wine);border-radius:999px;padding:8px 13px;font-size:.78rem;font-weight:600}
+.concept-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.concept{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.concept-media{position:relative;background:#eee;aspect-ratio:4/3;overflow:hidden}
+.concept-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.concept:hover .concept-media img{transform:scale(1.025)}
+.concept-body{padding:24px}
+.concept-body h3{font-size:2.2rem}
+.tag{display:inline-block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:9px}
+.concept-body p{font-size:.9rem;color:var(--muted);margin:0 0 15px}
+.gallery-strip{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.gallery-strip img{height:150px;width:100%;object-fit:cover;border-radius:15px}
+.final{background:var(--wine);color:#f8edf0;text-align:center;position:relative;overflow:hidden}
+.final h2,.final h3{color:#fff}
+.final .section-kicker{color:#d8b78a}
+.final p{max-width:760px;margin:0 auto 20px;color:#eadde1}
+.final .script{color:#dca4b4}
+.footer{background:#26151d;color:#cdbbc1;padding:28px 0;text-align:center;font-size:.75rem;letter-spacing:.08em}
+.modal{position:fixed;inset:0;background:rgba(25,13,19,.68);z-index:100;display:none;align-items:center;justify-content:center;padding:18px}
+.modal.show{display:flex}
+.modal-card{width:min(760px,100%);max-height:88vh;overflow:auto;background:#fffdf9;border-radius:26px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.3);position:relative}
+.modal-card h2{font-size:2.5rem;padding-right:42px}
+.close{position:absolute;right:17px;top:14px;border:0;background:var(--rose-soft);color:var(--wine);width:38px;height:38px;border-radius:50%;font-size:1.3rem;cursor:pointer}
+.modal-card p,.modal-card li{color:var(--muted);font-size:.92rem}
+.modal-card strong{color:var(--wine)}
+.backtop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border:0;border-radius:50%;background:var(--wine);color:#fff;box-shadow:var(--shadow);cursor:pointer;display:none;z-index:40}
+.backtop.show{display:block}
+/* Mobile-first refinement */
+html{scroll-padding-top:76px}
+button,.btn,a{touch-action:manipulation}
+.concept-media{aspect-ratio:auto;background:#f5eeef;padding:0}
+.concept-media img{height:auto;width:100%;object-fit:contain}
+.concept-media-dual{display:grid;grid-template-columns:1fr 1fr;gap:2px;padding:0;background:var(--line)}
+.concept-media-dual img{height:100%;min-width:0;object-fit:cover}
+@media(max-width:800px){
+  body{font-size:15px}
+  .nav{min-height:62px}
+  .navlinks.mobile-open{top:62px;padding:14px 5%;gap:2px;box-shadow:0 12px 28px rgba(48,24,36,.08)}
+  .navlinks.mobile-open a{width:100%;padding:10px 0;font-size:.72rem}
+  .hero{padding:30px 0 48px}
+  .hero-copy{padding:0}
+  h1{font-size:clamp(2.9rem,15vw,4.4rem);line-height:.96}
+  .script{font-size:2.05rem}
+  .hero-sub{font-size:1.2rem}
+  .hero-note{font-size:.92rem}
+  section{padding:52px 0}
+  .section-head{margin-bottom:26px}
+  h2{font-size:clamp(2.2rem,11vw,3.2rem)}
+  .lead{font-size:1.2rem;line-height:1.5}
+  .paper{padding:21px;border-radius:20px}
+  .research-grid{gap:14px}
+  .brand-card{padding:19px;border-radius:18px}
+  .brand-card h3{font-size:1.8rem}
+  .brand-links{gap:7px}
+  .btn{min-height:42px;padding:10px 13px;font-size:.68rem}
+  .concept-grid{gap:18px}
+  .concept{border-radius:20px}
+  .concept-body{padding:20px}
+  .concept-body h3{font-size:2rem}
+  .concept-body p{font-size:.88rem}
+  .concept-media-dual{grid-template-columns:1fr;gap:3px}
+  .concept-media-dual img{height:auto;object-fit:contain}
+  .modal{padding:10px}
+  .modal-card{max-height:92vh;border-radius:20px;padding:23px 19px 24px}
+  .modal-card h2{font-size:2.05rem;line-height:1.05;padding-right:38px}
+  .modal-card p,.modal-card li{font-size:.9rem;line-height:1.65}
+  .close{right:12px;top:11px;width:40px;height:40px}
+  .backtop{right:14px;bottom:14px}
+}
+@media(max-width:380px){
+  .container{width:92%}
+  h1{font-size:2.75rem}
+  .brand-links .btn{width:100%}
+  .concept-body .btn{width:100%;white-space:normal;text-align:center}
+}
+
+@media(max-width:800px){
+  .navlinks{display:none}
+  .menu{display:block}
+  .navlinks.mobile-open{display:flex;position:absolute;top:68px;left:0;right:0;background:var(--ivory);padding:16px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
+  .hero-grid,.two-col,.research-grid,.concept-grid{grid-template-columns:1fr}
+  .hero{padding-top:28px}
+  section{padding:62px 0}
+  .logo-card{max-width:430px;margin:auto}
+  .gallery-strip{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .container{width:90%}
+  h1{font-size:3.25rem}
+  .paper{padding:23px}
+  .concept-body h3{font-size:1.95rem}
+  .gallery-strip img{height:120px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand-mini" href="#top">Dolle District</a>
+    <button class="menu" id="menuBtn" aria-label="Open navigation">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <a href="#welcome">Welcome</a>
+      <a href="#research">Research</a>
+      <a href="#themes">Themes</a>
+      <a href="#concepts">Concepts</a>
+      <a href="#naming">Naming</a>
+      <a href="#closing">Closing</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Initial Creative Observation · Pre-Launch Research</div>
+      <h1>Dolle District</h1>
+      <div class="script">by Ayanna Renee</div>
+      <div class="hero-sub">Beauty · Confidence · Lifestyle</div>
+      <p class="hero-note">An initial visual and creative exploration around the preparation, positioning and photo-shoot direction for the Dolle District lash brand.</p>
+      <div class="byline"><strong>Report submitted by:</strong> Najeeb<br><strong>Submitted to:</strong> Miss Ayanna Renee</div>
+    </div>
+    <div class="logo-card"><img src="assets/dolle-district-logo.jpg" alt="Dolle District by Ayanna Renee logo"></div>
+  </div>
+</section>
+
+<section id="welcome">
+  <div class="container">
+    <div class="paper welcome">
+      <div class="section-kicker">A note before we begin</div>
+      <h2>Hey Miss Ayanna,</h2>
+      <p class="lead">A very good day to you.</p>
+      <p>Thank you for giving me the opportunity to think, observe and explore ideas around the launch of <strong>Dolle District</strong> and its lash collection.</p>
+      <p>Before going further, I would like to clarify that this report is <strong>not my final conclusion or a finished creative proposal</strong>. I see it more as the beginning of our observation, brainstorming, visualising and conceptualising process.</p>
+      <p>My intention with this first attempt is to put some early thoughts on the table so that we can start a conversation. I would very much welcome your suggestions, corrections, criticism, concerns and alternative ideas. From there, I can continue developing and improving the concepts.</p>
+      <div class="pullquote">“The strongest result can grow through conversation, criticism, observation and continuous refinement.”</div>
+    </div>
+  </div>
+</section>
+
+<section id="observation">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">01 · Initial Observation</div>
+      <h2>Understanding the product</h2>
+      <p class="lead">The first challenge was not the photography. It was learning to see the lashes themselves.</p>
+    </div>
+    <div class="two-col">
+      <div class="paper">
+        <h3>A personal observation</h3>
+        <p>Honestly, understanding lashes themselves has been one of the biggest challenges for me so far.</p>
+        <p>It took me around three days of observing and comparing different lash styles before I could begin to understand the differences between categories such as <strong>Doll, Angel and Siren</strong>.</p>
+        <p>Even now, I am still learning and trying to understand the details more deeply.</p>
+      </div>
+      <div class="paper">
+        <h3>What I am learning</h3>
+        <p>Continuous observation, studying existing brands and looking at how different lash styles are presented should gradually build a stronger understanding of the product.</p>
+        <p>For me, this is not only about creating attractive photographs. It is also about understanding <strong>what each lash represents, what emotion it creates, who it is designed for, and how that feeling can be communicated visually.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">02 · Brand Benchmarking</div>
+      <h2>What established brands are doing</h2>
+      <p class="lead">Ten established lash and beauty brands were selected as an initial reference group — not to copy, but to understand what works and where Dolle District can develop its own identity.</p>
+    </div>
+    <div class="paper" style="margin-bottom:28px">
+      <h3>One early pattern stood out</h3>
+      <p>Short-form video appears prominently in promotional communication and social-media-led brand presentation.</p>
+      <p>For still photography, there is also a strong tendency toward <strong>close facial portraits, eye-focused photography, and framing around the face or above the neck.</strong></p>
+      <p>This makes sense because the lashes themselves need to remain visually important. The photograph should communicate the overall beauty of the person while still allowing the viewer to notice the lash design.</p>
+    </div>
+    <div class="research-grid">
+      <article class="brand-card">
+        <div class="brand-no">01</div><h3>Doll Beauty</h3>
+        <p>Pink, playful and feminine. Celebrity and MUA features, soft close-up eye shots and lifestyle imagery. More accessible glam than pure editorial.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://dollbeauty.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/_dollbeauty">Instagram</a><a class="btn" target="_blank" href="https://tiktok.com/@_dollbeauty">TikTok</a></div>
+        <button class="btn primary read-more" data-title="Doll Beauty" data-text="Pink, playful and feminine branding. Strong celebrity and MUA features. Soft close-up eye shots plus lifestyle imagery. More accessible glam than pure editorial. Useful for studying the strength of the Doll identity, femininity and personality.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">02</div><h3>House of Lashes</h3>
+        <p>Polished and inclusive, with eye-shape guidance, clear product storytelling, soft studio lighting and editorial model close-ups.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://houseoflashes.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/houseoflashes">Instagram</a><a class="btn" target="_blank" href="https://tiktok.com/@houseoflashes">TikTok</a></div>
+        <button class="btn primary read-more" data-title="House of Lashes" data-text="Very polished and inclusive. Eye-shape quizzes and clear product storytelling. Soft studio lighting, model close-ups and an editorial feel. Particularly relevant because the brand includes a Siren style. Potentially one of the strongest references for Dolle District.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">03</div><h3>Lilly Lashes</h3>
+        <p>High-glam, celebrity-driven and polished, with dramatic model shots and strong red-carpet energy.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://lillylashes.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/lillylashes">Instagram</a><a class="btn" target="_blank" href="https://tiktok.com/@lillylashes">TikTok</a></div>
+        <button class="btn primary read-more" data-title="Lilly Lashes" data-text="High-glamour and celebrity-oriented. Visual communication feels polished, dramatic and luxurious, with strong beauty and red-carpet associations. Useful for studying glamour, luxury and visual impact.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">04</div><h3>Velour Beauty</h3>
+        <p>Effortless luxury positioning with soft, clean, modern photography and a polished, refined feel.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://velourbeauty.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/velourbeautyofficial">Instagram</a><a class="btn" target="_blank" href="https://tiktok.com/@velourbeautyofficial">TikTok</a></div>
+        <button class="btn primary read-more" data-title="Velour Beauty" data-text="Effortless luxury positioning. Soft, clean and modern photography. Celebrity MUA collaborations and a polished, refined visual language. A strong reference for achieving premium appearance without excessive visual complexity.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">05</div><h3>Ardell</h3>
+        <p>Mass-market and practical, with tutorial-heavy content, clean product shots and real-user application videos.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://ardellshop.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/ardellbeauty">Instagram</a></div>
+        <button class="btn primary read-more" data-title="Ardell" data-text="Mass-market and practical. Strong tutorial and application emphasis, clean product shots and real-user content. Useful as a contrast to luxury editorial positioning.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">06</div><h3>Eylure</h3>
+        <p>Heritage UK brand balancing fun, trendy and classic aesthetics with lifestyle imagery and tutorials.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://eylure.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/eylureofficial">Instagram</a><a class="btn" target="_blank" href="https://tiktok.com/@eylureofficial">TikTok</a></div>
+        <button class="btn primary read-more" data-title="Eylure" data-text="Heritage UK beauty identity combined with fun, trendy and accessible visual communication. Useful for studying how a recognisable visual identity can remain approachable.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">07</div><h3>KISS / Falscara</h3>
+        <p>Strong DIY education and social virality, especially around under-lash technique and real-girl application.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://www.kissusa.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/kissproducts">Instagram</a><a class="btn" target="_blank" href="https://tiktok.com/@kisslashes">TikTok</a></div>
+        <button class="btn primary read-more" data-title="KISS / Falscara" data-text="Strong DIY education and social-media-friendly demonstrations. Falscara focuses on an under-lash application system. Useful for understanding educational content, demonstrations and short-form video.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">08</div><h3>Lashify</h3>
+        <p>Premium DIY lash-extension system combining education, community building and high-end product/lifestyle presentation.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://lashify.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/lashify">Instagram</a><a class="btn" target="_blank" href="https://tiktok.com/@lashify">TikTok</a></div>
+        <button class="btn primary read-more" data-title="Lashify" data-text="Premium DIY lash-extension system. Combines high-end product presentation with education, tutorials, community and founder/product storytelling. Useful for understanding how education and luxury can coexist.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">09</div><h3>MAC Cosmetics</h3>
+        <p>Professional, artistic and high-fashion. Lashes are generally secondary to complete makeup looks.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://www.maccosmetics.com">Website</a><a class="btn" target="_blank" href="https://instagram.com/maccosmetics">Instagram</a></div>
+        <button class="btn primary read-more" data-title="MAC Cosmetics" data-text="Professional, artistic and editorial. Lashes are usually part of a complete makeup look rather than the sole hero. Useful for studying professional beauty photography and editorial styling.">Read more</button>
+      </article>
+      <article class="brand-card">
+        <div class="brand-no">10</div><h3>Dolly Wink</h3>
+        <p>Japanese doll-eye and kawaii aesthetic, cute and playful with a strong big-eye focus.</p>
+        <div class="brand-links"><a class="btn" target="_blank" href="https://dollywink-jp.com">Website</a></div>
+        <button class="btn primary read-more" data-title="Dolly Wink" data-text="Pure Japanese doll-eye / kawaii aesthetic. Cute, youthful and playful with an emphasis on expressive-looking eyes. Useful for understanding the Doll concept, but also a reminder to keep Dolle District feminine and mature rather than childish.">Read more</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="themes">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">03 · Creative Direction</div>
+      <h2>What appears closest to Dolle District</h2>
+      <p class="lead">The central direction I see is feminine, luxurious, polished and editorial — with the Doll concept expressed in a mature way.</p>
+    </div>
+    <div class="accordion">
+      <div class="accordion-item open"><button class="accordion-btn">Miss Ayanna's recommended themes <span class="plus">+</span></button><div class="accordion-content"><p><strong>Feminine + luxurious + polished + editorial + Doll-inspired (without being childish).</strong></p></div></div>
+      <div class="accordion-item"><button class="accordion-btn">The five closest matches <span class="plus">+</span></button><div class="accordion-content"><ol><li><strong>House of Lashes</strong> — strongest overall match; polished editorial photography, feminine but mature and clear brand direction.</li><li><strong>Lilly Lashes</strong> — glamorous, polished and luxurious.</li><li><strong>Velour Beauty</strong> — clean, modern luxury and soft femininity.</li><li><strong>Doll Beauty</strong> — strong Doll alignment, but slightly more playful/pink.</li><li><strong>Lashify</strong> — high-end and polished, with stronger focus on the DIY system.</li></ol></div></div>
+      <div class="accordion-item"><button class="accordion-btn">Less aligned references <span class="plus">+</span></button><div class="accordion-content"><p><strong>Ardell, KISS/Falscara, Eylure</strong> are more mass-market and tutorial focused. <strong>Dolly Wink</strong> may be too cute/kawaii. <strong>MAC</strong> is highly polished but lashes are not the main hero.</p></div></div>
+      <div class="accordion-item"><button class="accordion-btn">Key points <span class="plus">+</span></button><div class="accordion-content"><ol><li>High-quality close-up eye photography and soft flattering lighting are central.</li><li>Premium brands generally avoid heavy filters and overly sexual poses; they remain polished and feminine.</li><li>Named styles such as Doll, Siren and Angel help customers visualise the lash personality.</li></ol></div></div>
+      <div class="accordion-item"><button class="accordion-btn">Similarities across strong brands <span class="plus">+</span></button><div class="accordion-content"><ol><li>Model close-ups focused on the eyes.</li><li>Soft clean backgrounds: studio, cream, white and soft pink/neutral tones.</li><li>Consistent colour palette and visual identity.</li><li>Still photos plus short video: blinking, slow movement and application.</li></ol></div></div>
+      <div class="accordion-item"><button class="accordion-btn">Common factors <span class="plus">+</span></button><div class="accordion-content"><ol><li>Feminine but adult positioning.</li><li>Quality, reusability and comfort.</li><li>Strong social presence with consistent aesthetic.</li><li>Product pages that describe the feeling of the lash, not only technical specifications.</li></ol></div></div>
+    </div>
+    <div style="margin-top:28px" class="paper">
+      <div class="section-kicker">Emerging themes</div>
+      <div class="pills">
+        <span class="pill">Editorial Soft Glam</span><span class="pill">Effortless Luxury</span><span class="pill">Named Style Collections</span><span class="pill">Close-Up Eye Hero Shots</span><span class="pill">Feminine Without Childish</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="concepts">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">04 · Preliminary Shoot Concepts</div>
+      <h2>Four visual directions to explore</h2>
+      <p class="lead">These are early creative attempts, supported by preliminary illustration images. If a direction feels promising, it can be developed into a more detailed production plan.</p>
+    </div>
+    <div class="concept-grid">
+      <article class="concept">
+        <div class="concept-media concept-media-dual">
+          <img src="assets/pre illustration example picture 1.png" alt="Pre illustration example picture 1 — Airport Lounge">
+          <img src="assets/pre illustration example picture 1a.png" alt="Pre illustration example picture 1a — Airport Lounge">
+        </div>
+        <div class="concept-body"><div class="tag">Best for The Doll style</div><h3>Airport Lounge</h3><p>Calm, expensive and editorial — modern luxury with quiet confidence.</p><button class="btn primary read-more" data-title="Shoot Concept 01 — Airport Lounge" data-html="airport">Read more about this concept</button></div>
+      </article>
+      <article class="concept">
+        <div class="concept-media"><img src="assets/pre illustration example picture 2.png" alt="Pre illustration example picture 2 — The Private Vanity"></div>
+        <div class="concept-body"><div class="tag">Best for The Doll style</div><h3>The Private Vanity</h3><p>Soft, intimate and luxurious — a private moment of getting ready.</p><button class="btn primary read-more" data-title="Shoot Concept 02 — The Private Vanity" data-html="vanity">Read more about this concept</button></div>
+      </article>
+      <article class="concept">
+        <div class="concept-media"><img src="assets/pre illustration example picture 3.png" alt="Pre illustration example picture 3 — Soft Morning Light"></div>
+        <div class="concept-body"><div class="tag">Best for The Angel style</div><h3>Soft Morning Light</h3><p>Clean, pure, gentle and ethereal — light, calm and elevated.</p><button class="btn primary read-more" data-title="Shoot Concept 03 — Soft Morning Light" data-html="morning">Read more about this concept</button></div>
+      </article>
+      <article class="concept">
+        <div class="concept-media"><img src="assets/pre illustration example picture 4.png" alt="Pre illustration example picture 4 — The Quiet Study"></div>
+        <div class="concept-body"><div class="tag">Works for Doll + Angel</div><h3>The Quiet Study</h3><p>Calm, intelligent and editorial — beauty with confidence and refinement.</p><button class="btn primary read-more" data-title="Shoot Concept 04 — The Quiet Study" data-html="study">Read more about this concept</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="naming">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">05 · Brand & Product Naming</div>
+      <h2>Names should speak the customer's language</h2>
+      <p class="lead">If the main audience is in Europe, the United States or other Western markets, cultural familiarity should be part of the naming conversation.</p>
+    </div>
+    <div class="paper">
+      <p>I believe the people the product is prepared for should be approached through language, cultural references, lifestyle values and emotional cues that feel natural to them.</p>
+      <p>One early thought was celebrity-inspired naming. However, this needs to be handled carefully. Using a real celebrity's name commercially can create trademark, publicity-rights, endorsement or licensing concerns. Without proper permission or collaboration, it would be safer to create names that <strong>feel glamorous and celebrity-inspired without directly using a real person's name.</strong></p>
+      <p>This is an area I would like to research further and develop with your suggestions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="next">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">06 · Next Development</div>
+      <h2>Where I would take this next</h2>
+    </div>
+    <div class="two-col">
+      <div class="paper"><h3>Product understanding</h3><p>Continue studying Doll, Angel and Siren styles and understand how each should communicate its own personality.</p></div>
+      <div class="paper"><h3>Brand identity</h3><p>Define what makes Dolle District by Ayanna Renee distinctive from existing lash brands.</p></div>
+      <div class="paper"><h3>Photography</h3><p>Turn the four preliminary concepts into detailed shot plans covering poses, angles, lighting and hero images.</p></div>
+      <div class="paper"><h3>Visual language</h3><p>Explore colour, lighting, wardrobe, makeup, hair, props, locations, camera angles, close-up styles and video movement.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="closing" class="final">
+  <div class="container">
+    <div class="section-kicker">A final note</div>
+    <h2>This is only the beginning.</h2>
+    <div class="script">With respect,</div>
+    <p>Miss Ayanna, I would like to emphasise once again that this report is only my first attempt. I am still learning about the lash product, the different styles, the beauty market and how established brands communicate visually.</p>
+    <p>Some observations may be incomplete. Some concepts may need significant changes. Some ideas may not work at all — and that is exactly why I wanted to put them together at this stage.</p>
+    <p>My hope is that this first report can give us something concrete to discuss. If a direction is interesting, I can develop it. If something is weak, I can rethink it. If something is missing, I can research it.</p>
+    <p><strong>From there, we can gradually shape a stronger and more distinctive visual direction for Dolle District by Ayanna Renee.</strong></p>
+    <div class="script" style="margin-top:28px">Thank you for taking the time to look through my initial thoughts.</div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">DOLLE DISTRICT BY AYANNA RENEE · INITIAL CREATIVE REPORT · PRE-LAUNCH EXPLORATION</div>
+</footer>
+
+<button class="backtop" id="backTop" aria-label="Back to top">↑</button>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-card">
+    <button class="close" id="closeModal" aria-label="Close">×</button>
+    <div class="section-kicker">Detailed observation</div>
+    <h2 id="modalTitle"></h2>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+const modal=document.getElementById('modal'), modalTitle=document.getElementById('modalTitle'), modalBody=document.getElementById('modalBody');
+const conceptContent={
+airport:`<p><strong>Overall Vibe:</strong> Calm, expensive and editorial. It feels modern, luxurious and quietly confident — like a high-end fashion campaign.</p><p><strong>Setting:</strong> A quiet, upscale airport lounge with soft, clean lighting and a modern refined background.</p><p><strong>Styling:</strong> Tailored wide-leg pants, soft silk top, stylish boots, delicate gold jewellery and simple rings.</p><p><strong>Makeup & Hair:</strong> Soft-glam makeup with a polished finish. Sunglasses can rest casually in the hair. Hair should be neat and modern.</p><p><strong>Props:</strong> Open laptop, sunglasses and a minimal lounge environment.</p><p><strong>Photo / Video Ideas:</strong></p><ul><li>Medium shot with a soft three-quarter angle.</li><li>Tight close-up focused on the face and eyes.</li><li>Hero shot where the Doll lashes look big, open, rounded and fluttery, with more length and volume toward the centre.</li></ul>`,
+vanity:`<p><strong>Overall Vibe:</strong> Soft, intimate and luxurious — a private moment of getting ready.</p><p><strong>Setting:</strong> Luxurious vanity or elegant bedroom corner with warm lighting, cream tones and a clean mirror.</p><p><strong>Styling:</strong> Silk or satin slip dress/robe in champagne, ivory or soft pink with minimal gold jewellery.</p><p><strong>Makeup & Hair:</strong> Soft-glam makeup with glowing skin. Hair loosely pinned or half-up, natural but polished.</p><p><strong>Props:</strong> Vanity table, elegant mirror, soft silk fabric and robe.</p><p><strong>Photo / Video Ideas:</strong> Medium vanity shot, close-up of Doll lashes through the mirror, and a soft video of gently adjusting near the eyes or blinking slowly.</p>`,
+morning:`<p><strong>Overall Vibe:</strong> Clean, pure, gentle and ethereal — light, calm and elevated.</p><p><strong>Setting:</strong> Large window with sheer white curtains and soft natural morning light. White, cream and beige surroundings.</p><p><strong>Styling:</strong> Light flowing ivory or white blouse/dress with minimal delicate jewellery.</p><p><strong>Makeup & Hair:</strong> Almost-natural soft makeup, healthy glowing skin and soft hair worn down.</p><p><strong>Props:</strong> Sheer curtains and natural light only.</p><p><strong>Photo / Video Ideas:</strong> Window portrait, tight eye close-up highlighting wispy Angel lashes, and a slow gentle blink in natural light.</p>`,
+study:`<p><strong>Overall Vibe:</strong> Calm, intelligent and editorial — refined and luxurious without being overly glamorous.</p><p><strong>Setting:</strong> Modern study or library corner with soft bookshelves, warm side lighting and elegant neutral tones.</p><p><strong>Styling:</strong> Soft silk blouse with tailored trousers or an elegant knit set, plus subtle gold jewellery. Glasses may be placed in the hair or held naturally.</p><p><strong>Makeup & Hair:</strong> Polished soft glam with hair neat but natural.</p><p><strong>Props:</strong> Open book, elegant pen, bookshelves and soft background lighting.</p><p><strong>Photo / Video Ideas:</strong> Medium reading shot, close-up as she looks slightly away, and a detail shot of the eyes moving from the book upward.</p>`
+};
+document.querySelectorAll('.read-more').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    modalTitle.textContent=btn.dataset.title || '';
+    modalBody.innerHTML=btn.dataset.html ? conceptContent[btn.dataset.html] : `<p>${btn.dataset.text || ''}</p>`;
+    modal.classList.add('show'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden';
+  });
+});
+function closeModal(){modal.classList.remove('show');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+document.getElementById('closeModal').onclick=closeModal;
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.querySelectorAll('.accordion-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open'));
+});
+const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('mobile-open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('mobile-open')));
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>500));
+backTop.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+</script>
+</body>
+</html>
